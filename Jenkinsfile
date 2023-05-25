@@ -56,7 +56,7 @@ pipeline {
         }
     stage('Docker Deploy'){
         steps{
-             sh 'docker run -d -p 8080:8080 ${IMAGE_NAME}:${BUILD_NUMBER}'
+             sh 'docker run -d -p 4000:8080 ${IMAGE_NAME}:${BUILD_NUMBER}'
             // sh 'docker container rm -f spring-with-maven || true'
             // sh 'docker container run -d -p 4000:3000 --name spring-with-maven stkraych/spring-with-maven'
         }

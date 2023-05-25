@@ -5,7 +5,7 @@ pipeline {
     }
 
     tools{
-        maven 'MavenInstallationName'
+        maven 'maven'
         dockerTool 'docker'
     }
     triggers{

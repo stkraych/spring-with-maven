@@ -34,14 +34,7 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        stage('Deploy') {
-           steps {
-                 sh 'pkill node | true'
-                sh 'npm install -g forever'
-                sh 'forever start src/index.js'
-           }
-        }
-
+       
 
        stage('Docker login'){
            steps {

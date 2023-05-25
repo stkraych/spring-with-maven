@@ -14,12 +14,10 @@ pipeline {
 
    environment {
       DOCKERHUB_CREDENTIALS = credentials('docker_id')
-      IMAGE_NAME = 'stkraych/mynodejsapp'
+      IMAGE_NAME = 'stkraych/spring-with-maven'
     }
 
     stages {
-
-        
 
         stage('Clone Repo') {
             steps {
@@ -74,8 +72,8 @@ pipeline {
             sdocteps {
                 cleanWs()
             }
-        }
+     }
           
-    }
+    
    
  }

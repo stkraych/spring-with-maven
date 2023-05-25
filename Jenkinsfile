@@ -56,8 +56,8 @@ pipeline {
         }
     stage('Docker Deploy'){
         steps{
-            sh 'docker container rm -f mynodejsapp || true'
-            sh 'docker container run -d -p 4000:3000 --name mynodejsapp stkraych/mynodejsapp'
+            sh 'docker container rm -f spring-with-maven || true'
+            sh 'docker container run -d -p 4000:3000 --name spring-with-maven stkraych/spring-with-maven'
         }
     }
 

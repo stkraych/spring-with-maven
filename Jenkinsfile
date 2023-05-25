@@ -69,7 +69,7 @@ pipeline {
     }
 
     stage('Clean') {
-            sdocteps {
+            steps {
                 cleanWs()
             }
      }
